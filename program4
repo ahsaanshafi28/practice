@@ -1,0 +1,9 @@
+cd Desktop
+git clone https://github.com/username/git-clone-lab.git
+ls
+cd git-clone-lab
+pwd
+ls
+git status
+git remote -v
+git log --oneline
