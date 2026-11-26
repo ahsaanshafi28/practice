@@ -1,0 +1,15 @@
+mkdir exp2
+cd exp2
+git init
+echo "print('Hello Git')" > hello.py
+git add hello.py
+git commit -m "Initial commit"
+git branch -M master
+git branch feature-branch
+git switch feature-branch
+echo "print('This change is from feature branch')" >> hello.py
+git add hello.py
+git commit -m "Added feature branch changes"
+git switch master
+git merge feature-branch
+cat hello.py
