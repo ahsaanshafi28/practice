@@ -1,0 +1,14 @@
+cd Desktop
+git clone https://github.com/username/exp5
+cd exp5
+git branch
+git status
+echo "Local developer change" >> 5.txt
+git add 5.txt
+git commit -m "Added local change"
+git fetch origin
+git log --oneline --graph --all
+git rebase origin/main
+git status
+git log --oneline --graph --all
+git push origin main
