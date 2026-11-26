@@ -1,11 +1,14 @@
 mkdir exp6
 cd exp6
-git branch
-git branch feature-branch
-git branch
+git init
+git branch -M master
+echo "Initial content" > file.txt
+git add file.txt
+git commit -m "Initial commit"
 git switch -c feature-branch
-git branch
+echo "Feature branch content" >> file.txt
+git add file.txt
+git commit -m "Added feature"
 git switch master
-git branch
-git merge feature-branch -m "Merged feature-branch into master"
-git log --oneline
+git merge --no-ff feature-branch -m "Merged feature-branch into master"
+git log --oneline --graph --all
