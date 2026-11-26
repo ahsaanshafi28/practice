@@ -1,0 +1,19 @@
+mkdir exp3
+cd exp3
+git init
+echo "print('Hello Git')" > student.py
+git add student.py
+git commit -m "Initial commit"
+git branch feature-branch
+echo "print('This is unfinished work')" >> student.py
+git status
+git stash
+git status
+git stash list
+git switch feature-branch
+git switch master
+git stash apply
+git status
+cat student.py
+git stash list
+git stash pop
