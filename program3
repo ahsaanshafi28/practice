@@ -16,4 +16,4 @@ git stash apply
 git status
 cat student.py
 git stash list
-git stash pop
+
