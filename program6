@@ -1,0 +1,11 @@
+mkdir exp6
+cd exp6
+git branch
+git branch feature-branch
+git branch
+git switch -c feature-branch
+git branch
+git switch master
+git branch
+git merge feature-branch -m "Merged feature-branch into master"
+git log --oneline
